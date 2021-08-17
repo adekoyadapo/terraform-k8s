@@ -17,3 +17,6 @@ variable "resource_group_name" {
 variable "vnet_subnets" {
   description = "vnet subnet ids"
 }
+variable "k8s_version" {
+  description = " Azure K8s version"
+}

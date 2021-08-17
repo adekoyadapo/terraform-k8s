@@ -14,6 +14,7 @@ module "azure_k8s" {
   cluster_name        = "${var.name_prefix}-aks-${count.index + 1}"
   vnet_subnets        = module.azure_base.vnet_subnets
   depends_on          = [module.azure_base]
+  k8s_version         = var.k8s_version
 }
 
 module "app_bookinfo" {

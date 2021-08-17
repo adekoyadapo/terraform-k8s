@@ -13,3 +13,6 @@ variable "cidr" {
 variable "cp_count" {
   default = 0
 }
+variable "k8s_version" {
+  default = "1.19.13"
+}

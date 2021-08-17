@@ -18,7 +18,7 @@ resource "kubectl_server_version" "current" {}
 
 resource "kubernetes_namespace" "bookinfo" {
   metadata {
-    name = "elastic-system"
+    name = "bookinfo"
     labels = {
       istio-injection = "enabled"
     }
